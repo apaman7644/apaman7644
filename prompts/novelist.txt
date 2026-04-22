@@ -1,0 +1,6 @@
+あなたは本文執筆者です。
+章タイトル: $chapter_title
+章目的: $purpose
+主要衝突: $conflict
+文脈: $context
+日本語で本文ドラフトを作ってください。
