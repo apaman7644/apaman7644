@@ -1,0 +1,25 @@
+[project]
+name = "sample_project"
+language = "ja"
+
+[generation]
+target_chars = 100000
+chapter_count = 12
+chars_per_chapter = 8000
+genre = "近未来サスペンス"
+style = "硬質で映像的"
+prohibited_expressions = ["過度な暴力描写", "差別的表現"]
+candidates = 3
+revision_rounds = 2
+model = "mock"
+temperature = 0.7
+
+[generation.safety]
+avoid_r18 = true
+
+[evaluation]
+weights = {story_consistency = 1.2, character_consistency = 1.2, causality_clarity = 1.1, foreshadow_payoff_consistency = 1.1, theme_penetration = 1.0, style_stability = 1.0, low_redundancy = 1.0, pacing = 1.0, chapter_hooks = 1.1, reader_engagement = 1.2, information_reveal_balance = 1.0, dialogue_naturalness = 1.0, scene_description_quality = 1.0, emotional_buildup = 1.0, overall = 1.5}
+
+[paths]
+storage_root = "./workspace_data"
+prompt_root = "./prompts"
